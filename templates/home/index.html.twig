@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="calendar">
+            <div class="month">
+                <div class="prev"><</div>
+                <div class="date">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <div class="next">></div>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days">
+            </div>
+        </div>
+        <div id="bookings">
+            <h1>Bookings</h1>
+
+        </div>
+    </div>
+
+
+{% endblock %}
